@@ -1,0 +1,6 @@
+podcasts:
+  filtered:
+    - title: "Живой Гвроздь (избранное)"
+      source_url: https://cloud.mave.digital/41353
+      route: "zhgv"
+      filter: "(Шульман.*) | (Мовчан.*) | (Архипова.*) | (Колесников.*)"

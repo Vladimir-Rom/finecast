@@ -1,0 +1,23 @@
+[package]
+name = "finecast"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web="4"
+config = {version = "0.13.1", features = ["yaml"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.9.20"
+url = { version = "2.0", features = ["serde"] }
+regex = "1"
+serde_regex="*"
+env_logger="0.10.0"
+mime="0.3.17"
+xmltree="0.10.3"
+reqwest="0.11.17"
+anyhow="1.0"
+
+[target.x86_64-unknown-linux-musl]
+linker = "rust-lld"
